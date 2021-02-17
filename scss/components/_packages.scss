@@ -1,0 +1,57 @@
+.packages {
+  position: relative;
+  z-index: 50;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border: none;
+  padding: 1.875rem 2.5rem 2.5rem;
+  background-size: cover;
+  border-radius: 50%;
+  width: 7.5rem;
+  height: 7.5rem;
+  cursor: pointer;
+  @include respond-above(sm) {
+    padding: 2rem 3rem 3rem;
+    width: 12.5rem;
+    height: 12.5rem;
+  }
+  &:focus {
+    outline: none;
+  }
+
+  &--light {
+    background: url(../images/button1-white.svg);
+    background-repeat: no-repeat;
+    background-position: 50%;
+    color: $primary-color;
+    @include respond-above(md) {
+      background: url(../images/button1.svg);
+      background-repeat: no-repeat;
+      background-position: 50%;
+    }
+  }
+  &--dark {
+    background: url(../images/button2.svg);
+    background-repeat: no-repeat;
+    background-position: 50%;
+    color: $secondary-color;
+  }
+  &__number {
+    font-family: $secondary-font;
+    font-size: 1.8rem;
+    font-size: 700;
+    @include respond-above(sm) {
+      font-size: 2.5rem;
+    }
+  }
+  &__title {
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 0.8rem;
+    @include respond-above(sm) {
+      font-size: 1.12rem;
+    }
+  }
+}

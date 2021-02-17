@@ -1,0 +1,44 @@
+.card {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  @include respond-above(md){
+    flex-direction: column;
+  }
+  &__img {
+    width: 3.8rem;
+    height: 3.8rem;
+    margin-right: 2rem;
+    @include respond-above(sm){
+      width: 5.8rem;
+    height: 5.8rem;
+    }
+    @include respond-above(md){
+      width: 5.8rem;
+      height: 5.8rem;
+      margin-right: 0;
+      margin-bottom: 1.6rem;
+    }
+  }
+  &__article{
+    display: flex;
+    flex-direction: column;
+    @include respond-above(md){
+      align-items: center;
+
+    }
+  }
+  &__text {
+    font-size: .9rem;
+    font-weight: 500;
+    @include respond-above(sm){
+      font-size: 1.4rem;
+    }
+    @include respond-above(md){
+      margin-top: 1.5rem;
+      text-align: center;
+      padding: 0 2.5rem;
+    }
+  }
+}

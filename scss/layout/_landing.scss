@@ -1,0 +1,229 @@
+.addcar {
+  padding: 1rem;
+  @include respond-above(md) {
+    padding: 5rem;
+    background: url(../images/wave3.svg);
+    background-size: 100%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 50% 0;
+  }
+  @include respond-above(xxl) {
+    background-position: 50% 115%;
+  }
+  &__container {
+    max-width: 90vw;
+    margin: auto;
+    text-align: center;
+    @include respond-above(md) {
+      max-width: 60vw;
+    }
+  }
+  &__title {
+    &--mobile {
+      position: relative;
+      padding: 0 0.5rem;
+      .paragraph {
+        margin-top: 1rem;
+        margin-bottom: 1rem;
+        line-height: 1;
+        position: relative;
+        z-index: 10;
+      }
+      .heading-4 {
+        position: relative;
+        z-index: 10;
+      }
+      @include respond-above(md) {
+        display: none;
+      }
+    }
+    &--desktop {
+      display: none;
+      @include respond-above(md) {
+        display: block;
+        margin-bottom: 2rem;
+      }
+    }
+  }
+}
+.benefits {
+  padding: 3rem 0;
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  align-items: center;
+  grid-column-gap: 3rem;
+  background: $secondary-color;
+  @include respond-above(md) {
+    grid-template-columns: repeat(2, 1fr);
+    background: none;
+  }
+  @include respond-above(xl) {
+    grid-column-gap: 5rem;
+  }
+  &__figure {
+    display: none;
+    @include respond-above(md) {
+      display: block;
+    }
+  }
+  &__article {
+    padding: 0 1.4rem;
+    @include respond-above(sm) {
+      padding: 0 5rem;
+    }
+    @include respond-above(md) {
+      padding: 0 1rem;
+    }
+    @include respond-above(lg) {
+      padding: 0 3rem;
+    }
+    @include respond-above(xl) {
+      padding: 0 5rem;
+    }
+    .heading-2 {
+      text-align: center;
+      @include respond-above(md) {
+        text-align: left;
+        // transform: translateX(-1.4rem);
+      }
+    }
+  }
+}
+.how {
+  padding: 3rem 0 10rem 0;
+  background: $secondary-color;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  &:before {
+    content: "";
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    bottom: -12%;
+    left: 0;
+    background: url(../images/wave1-responsive.svg);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-position: 100% 100%;
+    z-index: 1;
+    @include respond-above(md) {
+      content: "";
+      width: 100%;
+      height: 100%;
+      position: absolute;
+      top: 0;
+      left: 0;
+      bottom: 0;
+      background: url(../images/white-wave.svg);
+      background-repeat: no-repeat;
+      background-size: 100%;
+      background-position: 100% 0%;
+      z-index: 1;
+    }
+    @include respond-above(xl) {
+      background-position: 100% 100%;
+    }
+  }
+  .heading-2 {
+    position: relative;
+    text-align: center;
+    z-index: 10;
+  }
+  &__grid {
+    position: relative;
+    z-index: 10;
+    max-width: 90vw;
+    margin: auto;
+    display: grid;
+    margin-top: 1rem;
+    grid-template-columns: repeat(1, 1fr);
+    grid-row-gap: 2rem;
+    @include respond-above(md) {
+      grid-template-columns: repeat(2, 1fr);
+      grid-column-gap: 3rem;
+      grid-row-gap: 2rem;
+    }
+    @include respond-above(lg) {
+      margin-top: 5rem;
+      max-width: 80vw;
+      grid-column-gap: 7rem;
+      grid-row-gap: 5rem;
+    }
+  }
+  .btn {
+    position: relative;
+    z-index: 10;
+    transform: translateY(3rem);
+    @include respond-above(lg) {
+      transform: translateY(5rem);
+    }
+  }
+}
+.reset {
+  padding: 8rem 0 0 0;
+
+  @include respond-above(md) {
+    background: $secondary-color;
+  }
+  .heading-2 {
+    text-align: center;
+    margin-bottom: 2rem;
+  }
+  .paragraph {
+    text-align: center;
+    &:not(:last-child) {
+      margin-bottom: 1rem;
+      @include respond-above(sm) {
+        margin-bottom: 2rem;
+      }
+    }
+  }
+  .list {
+    &__item {
+      font-size: 0.9rem;
+      @include respond-above(sm) {
+        font-size: 1.7rem;
+      }
+    }
+  }
+  &__container {
+    max-width: 80vw;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  &__figure {
+    margin-top: 2rem;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    .btn {
+      margin-bottom: 2rem;
+      @include respond-above(md) {
+        position: absolute;
+        left: 50%;
+        top: 5%;
+        transform: translateX(-50%);
+        margin-bottom: 0;
+      }
+    }
+  }
+  &__image {
+    &--desktop {
+      display: none;
+      @include respond-above(md) {
+        display: block;
+      }
+    }
+    &--mobile {
+      @include respond-above(md) {
+        display: none;
+      }
+    }
+  }
+}

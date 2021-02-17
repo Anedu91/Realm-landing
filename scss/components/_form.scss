@@ -1,0 +1,137 @@
+.form {
+  max-width: 90vw;
+  margin: auto;
+  @include respond-above(sm) {
+    max-width: 80vw;
+  }
+  @include respond-above(md) {
+    max-width: 50vw;
+  }
+  @include respond-above(xl) {
+    max-width: 30vw;
+  }
+  &__group {
+    margin-top: 1rem;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-column-gap: 1rem;
+    @include respond-above(sm) {
+      grid-column-gap: 3rem;
+    }
+    &:not(:last-child) {
+      margin-bottom: 1rem;
+    }
+    &--full {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+  }
+  &__label {
+    text-transform: uppercase;
+    background: $primary-color;
+    color: $white-color;
+    padding: 0.5rem;
+    font-size: 0.8rem;
+    font-weight: 500;
+    text-decoration: underline;
+    line-height: 1.5;
+    @include respond-above(sm) {
+      font-size: 1.1rem;
+    }
+
+    cursor: pointer;
+    a {
+      color: inherit;
+    }
+  }
+  &__container {
+    position: relative;
+    width: 100%;
+    background: $white-color;
+    border: 1px solid $black-color;
+    &--input {
+      padding: 0.3rem 1rem;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+    &--radio {
+      padding: 0.5rem;
+      display: flex;
+      align-items: center;
+      flex-direction: column;
+    }
+  }
+  &__input {
+    display: none;
+    width: 2rem;
+    font-size: 1.5rem;
+    border: none;
+    &:focus {
+      outline: none;
+    }
+    &-button {
+      border: none;
+      font-size: 1.5rem;
+      background: none;
+      cursor: pointer;
+      &:focus {
+        outline: none;
+      }
+    }
+  }
+  &__input-number {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 1.5rem;
+  }
+  &__radio {
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+
+    &:nth-child(2) {
+      transform: translateX(-4px);
+    }
+    &:not(:last-child) {
+      margin-bottom: 0.1rem;
+    }
+    &__input {
+      display: none;
+    }
+    &__input:checked ~ &__circle {
+      &:before {
+        content: "";
+        width: 0.6rem;
+        height: 0.6rem;
+        background: $primary-color;
+        border-radius: 50%;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+      }
+    }
+    &__label {
+      order: 1;
+      font-weight: 700;
+    }
+    &__circle {
+      width: 1rem;
+      height: 1rem;
+      border: 1px solid $black-color;
+      order: 0;
+      border-radius: 50%;
+      margin-right: 0.5rem;
+      position: relative;
+    }
+  }
+  &__price {
+    margin: 1rem 0;
+    text-transform: uppercase;
+    font-size: 1.16rem;
+    font-weight: 700;
+  }
+}

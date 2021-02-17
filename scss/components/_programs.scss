@@ -1,0 +1,81 @@
+.programs {
+  text-align: center;
+  padding: 2rem 0 0 0;
+  @include respond-above(md) {
+    padding: 2rem;
+  }
+  .heading-1 {
+    position: relative;
+    z-index: 10;
+  }
+  &__container {
+    position: relative;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    max-width: 100vw;
+    margin: auto;
+    background: $secondary-color;
+    padding: 5rem 0;
+    @include respond-above(sm) {
+      grid-template-columns: repeat(3, 1fr);
+    }
+    &:before {
+      content: "";
+      width: 100%;
+      height: 100%;
+      position: absolute;
+      background-image: url(../images/wave3-responsive.svg);
+      top: -5%;
+      left: 0;
+      background-repeat: no-repeat;
+      z-index: 1;
+      @include respond-above(sm) {
+        top: -25%;
+      }
+    }
+    @include respond-above(md) {
+      background: none;
+      padding: 0;
+      margin-top: 3rem;
+      &:before {
+        content: "";
+        display: none;
+      }
+    }
+    @include respond-above(lg) {
+      max-width: 60vw;
+    }
+  }
+  &__item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-end;
+  }
+  &__plan {
+    img {
+      width: 7rem;
+      transform: translateY(1.5rem);
+      @include respond-above(sm) {
+        width: 11rem;
+      }
+    }
+    @include respond-above(sm) {
+      margin-bottom: 0.25rem;
+    }
+  }
+  &__description {
+    text-transform: uppercase;
+    font-weight: 600;
+    font-size: 0.8rem;
+    @include respond-above(sm) {
+      font-size: 1.1rem;
+    }
+    &--dark {
+      color: $black-color;
+    }
+    &--light {
+      color: $primary-color;
+    }
+  }
+}

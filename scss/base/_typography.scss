@@ -1,0 +1,78 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap");
+@font-face {
+  font-family: "Canela";
+  src: url(../fonts/Canela-Medium.otf), url(../fonts/Canela-Medium-Web.woff);
+  font-weight: 400;
+}
+body {
+  font-family: $primary-font;
+}
+
+.heading-1 {
+  font-family: $secondary-font;
+  color: $primary-color;
+  font-size: 2.12rem;
+  @include respond-above(sm) {
+    font-size: 4.12rem;
+  }
+}
+.heading-2 {
+  font-family: $secondary-font;
+  color: $black-color;
+  font-size: 1.8rem;
+  text-transform: capitalize;
+  @include respond-above(sm) {
+    font-size: 2.5rem;
+  }
+  @include respond-above(lg) {
+    font-size: 3.3rem;
+  }
+}
+.heading-3 {
+  font-size: 1.25rem;
+  text-transform: uppercase;
+  @include respond-above(sm) {
+    font-size: 1.65rem;
+  }
+}
+.heading-4 {
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: 1rem;
+  @include respond-above(sm) {
+    font-size: 1.3rem;
+  }
+}
+.paragraph {
+  color: $black-color;
+  font-weight: 500;
+  font-size: 1rem;
+  line-height: 1.6;
+  @include respond-above(sm) {
+    font-size: 1.875rem;
+  }
+}
+.link {
+  color: currentColor;
+}
+.btn {
+  text-transform: uppercase;
+  padding: 0.75rem 4rem;
+  color: $white-color;
+  border: none;
+  background: $primary-color;
+  margin-top: 0rem;
+  font-size: 1.1rem;
+  cursor: pointer;
+  text-decoration: none;
+  transition: 0.5s all;
+  &:hover {
+    background: rgba($primary-color, 0.7);
+  }
+  &--cart {
+    background: #333;
+    &:hover {
+      background: #1a1a1a;
+    }
+  }
+}

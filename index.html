@@ -1,0 +1,375 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="css/main.css" />
+  </head>
+  <body>
+    <main>
+      <header class="programs">
+        <h1 class="heading-1">Pick Your Program</h1>
+        <div class="addcar__title addcar__title--mobile">
+          <p class="paragraph">
+            Become a member and make healthy a habit.
+            <br />
+            <a href="#reset" class="link">Learn more here</a> or subscribe
+            below. Subscribe below
+          </p>
+          <h4 class="heading-4">
+            Your Realm smoothies arribe monthly. <br />
+            Pause. skip. cancel anytime.
+          </h4>
+        </div>
+        <div class="programs__container">
+          <div class="programs__item">
+            <p class="programs__plan"></p>
+            <button class="packages packages--light" data-target="0">
+              <span class="packages__number">10</span>
+              <span class="packages__title"
+                >Smoothies <br />
+                per month</span
+              >
+            </button>
+            <p class="programs__description programs__description--light">
+              1-2 per week
+            </p>
+          </div>
+          <div class="programs__item">
+            <p class="programs__plan">
+              <img src="images/most-popular-2.svg" alt="Most popular plan" />
+            </p>
+            <button class="packages packages--dark" data-target="1">
+              <span class="packages__number">15</span>
+              <span class="packages__title"
+                >Smoothies <br />
+                per month</span
+              >
+            </button>
+            <p class="programs__description programs__description--dark">
+              3-4 per week
+            </p>
+          </div>
+          <div class="programs__item">
+            <p class="programs__plan">
+              <img src="images/power-3.svg" alt="Power plan" />
+            </p>
+            <button class="packages packages--light" data-target="2">
+              <span class="packages__number">30</span>
+              <span class="packages__title"
+                >Smoothies <br />
+                per month</span
+              >
+            </button>
+            <p class="programs__description programs__description--light">
+              5-6 per week
+            </p>
+          </div>
+        </div>
+      </header>
+      <section class="addcar">
+        <div class="addcar__container">
+          <div class="addcar__title addcar__title--desktop">
+            <p class="paragraph">
+              Subscribe below or
+              <a href="#reset" class="link">learn more here.</a>
+              <br />
+              Your Realm Smoothies arrive monthly
+            </p>
+            <h4 class="heading-4">Pause. skip. cancel anytime.</h4>
+          </div>
+          <form action="" class="form">
+            <div class="form__group">
+              <label class="form__label" id="cacao-button" data-target="cacao"
+                >bold cacao</label
+              >
+              <div class="form__container form__container--input">
+                <button class="form__input-button form-decrease">-</button>
+                <input
+                  type="text"
+                  value="5"
+                  class="form__input"
+                  name="cacao"
+                  readonly="readonly"
+                  min="0"
+                />
+                <button class="form__input-button form-increase">+</button>
+                <span class="form__input-number">5</span>
+              </div>
+            </div>
+            <div class="form__group">
+              <label class="form__label" id="berry-button" data-target="berry"
+                >berry fresh</label
+              >
+              <div class="form__container form__container--input">
+                <button class="form__input-button form-decrease">-</button>
+                <input
+                  type="text"
+                  value="5"
+                  class="form__input"
+                  name="berry"
+                  readonly="readonly"
+                  min="0"
+                />
+                <button class="form__input-button form-increase">+</button>
+                <span class="form__input-number">5</span>
+              </div>
+            </div>
+            <div class="form__group">
+              <label class="form__label" id="greens-button" data-target="greens"
+                >tropical greens</label
+              >
+              <div class="form__container form__container--input">
+                <button class="form__input-button form-decrease">-</button>
+                <input
+                  type="text"
+                  value="5"
+                  class="form__input"
+                  name="greens"
+                  readonly="readonly"
+                  min="0"
+                />
+                <button class="form__input-button form-increase">+</button>
+                <span class="form__input-number">5</span>
+              </div>
+            </div>
+            <div class="form__group">
+              <label
+                class="form__label"
+                id="reset-button"
+                data-target="foodReset"
+              >
+                Add shaker + <br />
+                Real food reset
+              </label>
+              <div class="form__container form__container--radio">
+                <label for="yes" class="form__radio">
+                  <span class="form__radio__label">Yes, Please!</span>
+                  <input
+                    type="radio"
+                    class="form__radio__input"
+                    name="shaker"
+                    id="yes"
+                    checked
+                  />
+                  <span class="form__radio__circle"></span>
+                </label>
+                <label for="no" class="form__radio">
+                  <span class="form__radio__label">No thanks</span>
+                  <input
+                    type="radio"
+                    class="form__radio__input"
+                    name="shaker"
+                    id="no"
+                  />
+                  <span class="form__radio__circle"></span>
+                </label>
+              </div>
+            </div>
+            <div class="form__group form__group--full">
+              <p class="form__price">
+                $<span>67.50</span> per month
+                <br />
+                (save 10%)
+              </p>
+              <button type="submit" class="btn btn--cart">Add to cart</button>
+            </div>
+          </form>
+        </div>
+      </section>
+      <section class="benefits">
+        <figure class="benefits__figure">
+          <img src="images/BerryFresh_product2_720x.webp" alt="" />
+        </figure>
+        <article class="benefits__article">
+          <h2 class="heading-2">Program Benefits</h2>
+          <ul class="list">
+            <li class="list__item">Delivered Monthly at 10% off</li>
+            <li class="list__item">Free shipping & free shaker bottle</li>
+            <li class="list__item">Exclusive invites to member events</li>
+            <li class="list__item">
+              real food reset (<a href="#reset" class="link">learn more</a>)
+            </li>
+          </ul>
+        </article>
+      </section>
+      <section class="how">
+        <h2 class="heading-2">How it works</h2>
+        <div class="how__grid">
+          <div class="card">
+            <img src="images/how1.svg" class="card__img" alt="svg icon" />
+            <article class="card__article">
+              <h3 class="heading-3">Personalized nutrition</h3>
+              <p class="card__text">
+                Design your monthly order with your favorite flavors.
+              </p>
+            </article>
+          </div>
+          <div class="card">
+            <img src="images/how2.svg" class="card__img" alt="svg icon" />
+            <article class="card__article">
+              <h3 class="heading-3">No commitment</h3>
+              <p class="card__text">
+                Super simple to skip a month, pause, or cancel your order.
+              </p>
+            </article>
+          </div>
+          <div class="card">
+            <img src="images/how3.svg" class="card__img" alt="svg icon" />
+            <article class="card__article">
+              <h3 class="heading-3">Healthy on repeat</h3>
+              <p class="card__text">
+                Smoothies and recipes monthly so you always have healthy on
+                hand.
+              </p>
+            </article>
+          </div>
+          <div class="card">
+            <img src="images/how4.svg" class="card__img" alt="svg icon" />
+            <article class="card__article">
+              <h3 class="heading-3">here for you</h3>
+              <p class="card__text">
+                Email us anytime with questions and join us monthly for Real
+                Food Reset.
+              </p>
+            </article>
+          </div>
+        </div>
+        <a href="#" class="btn">get started</a>
+      </section>
+      <section class="reset" id="reset">
+        <div class="reset__container">
+          <h2 class="heading-2">real food reset</h2>
+          <p class="paragraph">
+            With our Expert Dietitians, we created a 3-day program designed to
+            start each month with nutrient-rich recipes, nutrition tips &
+            tricks, to enjoy with your Realm Smoothies.
+          </p>
+          <p class="paragraph">
+            We don't believe in diets or cleanses. You can feel incredible with
+            real foods that keep us feeling hydrated, energized and empowered.
+            <br />
+            Our program includes:
+          </p>
+          <ul class="list">
+            <li class="list__item">Smoothies for breakfast & lunch</li>
+            <li class="list__item">Dinner recipes for each night</li>
+            <li class="list__item">custom grocery list to match</li>
+          </ul>
+        </div>
+        <figure class="reset__figure">
+          <a href="#" class="btn">get started</a>
+          <img
+            src="images/Hero_Home_16_017.jpg"
+            class="reset__image--desktop"
+            alt="Product image"
+          />
+          <img
+            src="images/Hero_Home_mobile.jpg"
+            class="reset__image--mobile"
+            alt="Product image"
+          />
+        </figure>
+      </section>
+    </main>
+    <!-- Modals -->
+    <div id="cacao" class="modal">
+      <div class="modal__content modal__content--cacao">
+        <span class="close"><span>&times;</span></span>
+        <article class="modal__article">
+          <h2 class="modal__heading modal__heading--cacao">bold cacao</h2>
+          <p class="modal__text">
+            Chocolat-ey cacao and creamy coconut<br />ﬂavors with a zing of
+            banana sweetness.
+          </p>
+          <p class="modal__text modal__text--semi-bold">
+            banana · dutched cacao · coconut milk · coconut water<br />peanut ·
+            carrot · ﬂaxseed · pea protein · brown rice protein
+          </p>
+          <p class="modal__text modal__text--bottom">
+            Each smoothie packs a nutrient-dense punch of complex carbs, healthy
+            fats, and plant protein. Bundle includes ﬁve packs, 250-calorie
+            each. Ready for mixing anywhere in our custom shaker.
+          </p>
+        </article>
+      </div>
+    </div>
+    <div id="berry" class="modal">
+      <div class="modal__content modal__content--berry">
+        <span class="close"><span>&times;</span></span>
+        <article class="modal__article">
+          <h2 class="modal__heading modal__heading--berry">berry fresh</h2>
+          <p class="modal__text">
+            A classic strawberry, banana taste<br />with a hint of almond,
+            peanut, and cacao.
+          </p>
+          <p class="modal__text modal__text--semi-bold">
+            strawberry · banana · coconut milk · peanut<br />cacao · almond ·
+            ﬂaxseed · brown rice protein · pea protein
+          </p>
+          <p class="modal__text modal__text--bottom">
+            Each smoothie packs a nutrient-dense punch of complex carbs, healthy
+            fats, and plant protein. Bundle includes ﬁve packs, 250-calorie
+            each. Ready for mixing anywhere in our custom shaker.
+          </p>
+        </article>
+      </div>
+    </div>
+    <div id="greens" class="modal">
+      <div class="modal__content modal__content--greens">
+        <span class="close"><span>&times;</span></span>
+        <article class="modal__article">
+          <h2 class="modal__heading modal__heading--greens">tropical greens</h2>
+          <p class="modal__text">
+            Refreshing tropical vibes with coconut<br />and pineapple ﬂavors and
+            an earthy ﬁnish.
+          </p>
+          <p class="modal__text modal__text--semi-bold">
+            pineapple · coconut milk · mango<br />carrot · almond · ﬂaxseed ·
+            wheatgrass<br />barley grass · pea protein · brown rice protein
+          </p>
+          <p class="modal__text modal__text--bottom">
+            Each smoothie packs a nutrient-dense punch of complex carbs, healthy
+            fats, and plant protein. Bundle includes ﬁve packs, 250-calorie
+            each. Ready for mixing anywhere in our custom shaker.
+          </p>
+        </article>
+      </div>
+    </div>
+    <div id="foodReset" class="modal">
+      <div class="modal__content modal__content--no-padding">
+        <span class="close"><span>&times;</span></span>
+        <article class="modal__article">
+          <div class="modal__header">
+            <h2 class="modal__heading">Real Food Reset</h2>
+          </div>
+          <div class="modal__body">
+            <p class="modal__text">
+              With our Expert Dietitians, we created a 3-day program designed to
+              start each month with nutrient-rich recipes, nutrition tips &
+              tricks, to enjoy with your Realm Smoothies.
+            </p>
+            <ul class="modal__list">
+              <li class="modal__list-item">SMOOTHIES FOR BREAKFAST & LUNCH</li>
+              <li class="modal__list-item">DINNER RECIPES FOR EACH NIGHT</li>
+              <li class="modal__list-item">CUSTOM GROCERY LIST TO MATCH</li>
+            </ul>
+            <div class="modal__blend">
+              <img src="images/blend-modal.svg" alt="Blend" />
+              <article>
+                <h4>No Blender? No Problem</h4>
+                <p class="modal__text">
+                  We’re gifting you a custom shaker<br />to enjoy your smoothies
+                  anywhere.<br />Simply mix with water or milk.
+                </p>
+              </article>
+            </div>
+          </div>
+        </article>
+      </div>
+    </div>
+
+    <script src="app.js"></script>
+  </body>
+</html>
